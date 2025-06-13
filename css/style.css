@@ -571,6 +571,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 10px;
+  min-height: 100dvh;
 }
 
 .popup__top {
@@ -776,6 +777,7 @@ body {
   padding: 5px 10px;
   min-height: 76px;
   color: var(--white);
+  position: relative;
 }
 
 .button img {
@@ -792,7 +794,7 @@ body {
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 100%;
-  min-height: 56px;
+  min-height: 76px;
 }
 
 .button.btn-black {
@@ -1752,28 +1754,7 @@ body {
   }
 }
 
-@media (max-width: 500px) {
-  .checkbox__icon {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 20px;
-            flex: 0 0 20px;
-    width: 20px;
-    height: 20px;
-  }
-
-  .checkbox__icon img {
-    height: 15px;
-    width: 15px;
-  }
-
-  .checkbox__label {
-    gap: 10px;
-  }
-
-  .checkbox__text {
-    font-size: 20px;
-  }
-
+@media (max-width: 700px) {
   .quantity {
     height: 70px;
   }
@@ -1885,6 +1866,10 @@ body {
 
   .order__price {
     font-size: 24px;
+  }
+
+  .button span {
+    min-height: 56px;
   }
 
   .button {
@@ -2056,12 +2041,17 @@ body {
 
   .products__content.scroll .card-product {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 360px;
-            flex: 0 0 360px;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+    min-width: 100%;
   }
 
   .card-product {
     padding: 20px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+    min-width: 100%;
   }
 
   .card-product__image {
@@ -2070,6 +2060,29 @@ body {
 
   .card-product__image img {
     height: 250px;
+  }
+}
+
+@media (max-width: 500px) {
+  .checkbox__icon {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 20px;
+            flex: 0 0 20px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .checkbox__icon img {
+    height: 15px;
+    width: 15px;
+  }
+
+  .checkbox__label {
+    gap: 10px;
+  }
+
+  .checkbox__text {
+    font-size: 20px;
   }
 }
 
