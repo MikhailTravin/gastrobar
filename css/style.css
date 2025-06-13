@@ -787,14 +787,15 @@ body {
 
 .button span {
   display: none;
+}
+
+.button span::after {
+  content: "";
   position: absolute;
-  top: 55px;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
   width: 100%;
-  min-height: 76px;
+  height: 100%;
 }
 
 .button.btn-black {
@@ -1867,11 +1868,6 @@ body {
   .card-product-block__text img {
     width: 25px;
     height: 25px;
-  }
-
-  .button span {
-    min-height: 56px;
-    top: 39px;
   }
 
   .button {
