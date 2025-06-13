@@ -543,6 +543,10 @@ body {
   pointer-events: auto;
 }
 
+.popup__content {
+  margin: 0px 0px 30px 0px;
+}
+
 .popup__container {
   position: relative;
   padding: 0px;
@@ -756,6 +760,9 @@ body {
 .button img {
   width: 27px;
   height: 27px;
+}
+
+.button span {
   display: none;
 }
 
@@ -769,11 +776,11 @@ body {
 }
 
 .button._active span {
-  display: none;
+  display: block;
 }
 
 .button._active img {
-  display: block;
+  display: none;
 }
 
 .title2 {
@@ -1116,11 +1123,12 @@ body {
   text-align: right;
 }
 
-.lang-header__body ul li a {
+.lang-header__link {
   text-align: right;
 }
 
-.lang-header__body ul li span {
+.lang-header__link._active {
+  pointer-events: none;
   text-align: right;
   color: var(--black);
 }
@@ -1281,6 +1289,30 @@ body {
   min-height: 81px;
 }
 
+.top-footer__button span {
+  display: block;
+}
+
+.top-footer__button span.add-basket {
+  display: block;
+}
+
+.top-footer__button span.show-basket {
+  display: none;
+}
+
+.top-footer__button img {
+  display: none;
+}
+
+.top-footer__button._active span.add-basket {
+  display: none;
+}
+
+.top-footer__button._active span.show-basket {
+  display: block;
+}
+
 .top-footer__button-black {
   width: auto;
   -webkit-box-flex: 0;
@@ -1296,7 +1328,6 @@ body {
   position: sticky;
   top: 0;
   z-index: 100;
-  padding: 0px 0px 100px 0px;
 }
 
 .navigation__content {
@@ -1363,12 +1394,15 @@ body {
   border-radius: 0px 50px 50px 0px;
 }
 
-.products {
-  margin: 0px 0px 67px 0px;
-}
-
-.products:last-child {
-  margin: 0px 0px 0px 0px;
+.page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 67px;
 }
 
 .products__content {
@@ -1672,8 +1706,8 @@ body {
 
   .card-product {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 460px;
-            flex: 0 0 460px;
+        -ms-flex: 0 0 450px;
+            flex: 0 0 450px;
   }
 }
 
@@ -1866,6 +1900,11 @@ body {
     margin: 0px 0px 15px 0px;
   }
 
+  .header__name img {
+    width: 30px;
+    height: 30px;
+  }
+
   .header__name span {
     font-size: 24px;
   }
@@ -1957,17 +1996,13 @@ body {
     font-size: 24px;
   }
 
-  .navigation {
-    padding: 0px 0px 50px 0px;
-  }
-
   .navigation__title {
     font-size: 24px;
     padding: 15px 30px;
   }
 
-  .products {
-    margin: 0px 0px 30px 0px;
+  .page {
+    gap: 30px;
   }
 
   .products__content.scroll .card-product {
@@ -1977,9 +2012,6 @@ body {
   }
 
   .card-product {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 360px;
-            flex: 0 0 360px;
     padding: 20px;
   }
 

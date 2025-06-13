@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20250613112310">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250613135921">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -41,16 +41,16 @@
 							<div class="lang-header__body">
 								<ul>
 									<li>
-										<span>русский</span>
+										<div class="lang-header__link _active">русский</div>
 									</li>
 									<li>
-										<a href="#">английский</a>
+										<div class="lang-header__link">английский</div>
 									</li>
 									<li>
-										<a href="#">немецкий</a>
+										<div class="lang-header__link">немецкий</div>
 									</li>
 									<li>
-										<a href="#">французский</a>
+										<div class="lang-header__link">французский</div>
 									</li>
 								</ul>
 							</div>
@@ -79,7 +79,7 @@
 					<h2 class="title2">Популярное</h2>
 					<div class="products__content scroll">
 						<div class="card-product">
-							<div data-popup="#one" class="card-product__item">
+							<div data-popup="#product1" class="card-product__item">
 								<div class="card-product__image">
 									<picture><source srcset="img/image1.webp" type="image/webp"><img src="img/image1.png" alt=""></picture>
 								</div>
@@ -100,12 +100,12 @@
 								</div>
 							</div>
 							<button type="button" class="card-product__button button">
-								<span>Добавить в заказ</span>
+								<span>Показать в корзине</span>
 								<img src="img/icons/plus.svg" alt="" class="card-product__plus">
 							</button>
 						</div>
 						<div class="card-product">
-							<div data-popup="2" class="card-product__item">
+							<div data-popup="#product2" class="card-product__item">
 								<div class="card-product__image">
 									<picture><source srcset="img/image1.webp" type="image/webp"><img src="img/image1.png" alt=""></picture>
 									<div class="card-product__tags">
@@ -134,12 +134,12 @@
 								</div>
 							</div>
 							<button type="button" class="card-product__button button">
-								<span>Добавить в заказ</span>
+								<span>Показать в корзине</span>
 								<img src="img/icons/plus.svg" alt="" class="card-product__plus">
 							</button>
 						</div>
 						<div class="card-product">
-							<div data-popup="3" class="card-product__item">
+							<div data-popup="#product3" class="card-product__item">
 								<div class="card-product__image">
 									<picture><source srcset="img/image1.webp" type="image/webp"><img src="img/image1.png" alt=""></picture>
 								</div>
@@ -160,7 +160,7 @@
 								</div>
 							</div>
 							<button type="button" class="card-product__button button">
-								<span>Добавить в заказ</span>
+								<span>Показать в корзине</span>
 								<img src="img/icons/plus.svg" alt="" class="card-product__plus">
 							</button>
 						</div>
@@ -172,7 +172,7 @@
 					<h2 class="title2">Завтраки</h2>
 					<div class="products__content">
 						<div class="card-product white">
-							<div class="card-product__item">
+							<div data-popup="#product4" class="card-product__item">
 								<div class="card-product__image">
 									<picture><source srcset="img/image2.webp" type="image/webp"><img src="img/image2.png" alt=""></picture>
 								</div>
@@ -193,12 +193,12 @@
 								</div>
 							</div>
 							<button type="button" class="card-product__button button btn-black">
-								<span>Добавить в заказ</span>
+								<span>Показать в корзине</span>
 								<img src="img/icons/plus.svg" alt="" class="card-product__plus">
 							</button>
 						</div>
 						<div class="card-product white">
-							<div class="card-product__item">
+							<div data-popup="#product5" class="card-product__item">
 								<div class="card-product__image">
 									<picture><source srcset="img/image2.webp" type="image/webp"><img src="img/image2.png" alt=""></picture>
 								</div>
@@ -219,12 +219,12 @@
 								</div>
 							</div>
 							<button type="button" class="card-product__button button btn-black">
-								<span>Добавить в заказ</span>
+								<span>Показать в корзине</span>
 								<img src="img/icons/plus.svg" alt="" class="card-product__plus">
 							</button>
 						</div>
 						<div class="card-product">
-							<div class="card-product__item">
+							<div data-popup="#product6" class="card-product__item">
 								<div class="card-product__image">
 									<picture><source srcset="img/image3.webp" type="image/webp"><img src="img/image3.png" alt=""></picture>
 									<div class="publicity">
@@ -249,7 +249,7 @@
 							</a>
 						</div>
 						<div class="card-product white">
-							<div class="card-product__item">
+							<div data-popup="#product7" class="card-product__item">
 								<div class="card-product__image">
 									<picture><source srcset="img/image2.webp" type="image/webp"><img src="img/image2.png" alt=""></picture>
 								</div>
@@ -270,7 +270,7 @@
 								</div>
 							</div>
 							<button type="button" class="card-product__button button btn-black">
-								<span>Добавить в заказ</span>
+								<span>Показать в корзине</span>
 								<img src="img/icons/plus.svg" alt="" class="card-product__plus">
 							</button>
 						</div>
@@ -282,7 +282,7 @@
 					<h2 class="title2">Салаты</h2>
 					<div class="products__content">
 						<div class="card-product white">
-							<div class="card-product__item">
+							<div data-popup="#product8" class="card-product__item">
 								<div class="card-product__image">
 									<picture><source srcset="img/image2.webp" type="image/webp"><img src="img/image2.png" alt=""></picture>
 								</div>
@@ -303,12 +303,12 @@
 								</div>
 							</div>
 							<button type="button" class="card-product__button button btn-black">
-								<span>Добавить в заказ</span>
+								<span>Показать в корзине</span>
 								<img src="img/icons/plus.svg" alt="" class="card-product__plus">
 							</button>
 						</div>
 						<div class="card-product white">
-							<div class="card-product__item">
+							<div data-popup="#product9" class="card-product__item">
 								<div class="card-product__image">
 									<picture><source srcset="img/image2.webp" type="image/webp"><img src="img/image2.png" alt=""></picture>
 								</div>
@@ -329,12 +329,12 @@
 								</div>
 							</div>
 							<button type="button" class="card-product__button button btn-black">
-								<span>Добавить в заказ</span>
+								<span>Показать в корзине</span>
 								<img src="img/icons/plus.svg" alt="" class="card-product__plus">
 							</button>
 						</div>
 						<div class="card-product">
-							<div class="card-product__item">
+							<div data-popup="#product10" class="card-product__item">
 								<div class="card-product__image">
 									<picture><source srcset="img/image3.webp" type="image/webp"><img src="img/image3.png" alt=""></picture>
 									<div class="publicity">
@@ -359,7 +359,7 @@
 							</a>
 						</div>
 						<div class="card-product white">
-							<div class="card-product__item">
+							<div data-popup="#product11" class="card-product__item">
 								<div class="card-product__image">
 									<picture><source srcset="img/image2.webp" type="image/webp"><img src="img/image2.png" alt=""></picture>
 								</div>
@@ -380,7 +380,7 @@
 								</div>
 							</div>
 							<button type="button" class="card-product__button button btn-black">
-								<span>Добавить в заказ</span>
+								<span>Показать в корзине</span>
 								<img src="img/icons/plus.svg" alt="" class="card-product__plus">
 							</button>
 						</div>
@@ -392,7 +392,7 @@
 					<h2 class="title2">Популярное</h2>
 					<div class="products__content scroll">
 						<div class="card-product">
-							<div class="card-product__item">
+							<div data-popup="#product12" class="card-product__item">
 								<div class="card-product__image">
 									<picture><source srcset="img/image1.webp" type="image/webp"><img src="img/image1.png" alt=""></picture>
 								</div>
@@ -413,12 +413,12 @@
 								</div>
 							</div>
 							<button type="button" class="card-product__button button">
-								<span>Добавить в заказ</span>
+								<span>Показать в корзине</span>
 								<img src="img/icons/plus.svg" alt="" class="card-product__plus">
 							</button>
 						</div>
 						<div class="card-product">
-							<div class="card-product__item">
+							<div data-popup="#product13" class="card-product__item">
 								<div class="card-product__image">
 									<picture><source srcset="img/image1.webp" type="image/webp"><img src="img/image1.png" alt=""></picture>
 									<div class="card-product__tags">
@@ -447,12 +447,12 @@
 								</div>
 							</div>
 							<button type="button" class="card-product__button button">
-								<span>Добавить в заказ</span>
+								<span>Показать в корзине</span>
 								<img src="img/icons/plus.svg" alt="" class="card-product__plus">
 							</button>
 						</div>
 						<div class="card-product">
-							<div class="card-product__item">
+							<div data-popup="#product14" class="card-product__item">
 								<div class="card-product__image">
 									<picture><source srcset="img/image1.webp" type="image/webp"><img src="img/image1.png" alt=""></picture>
 								</div>
@@ -473,7 +473,7 @@
 								</div>
 							</div>
 							<button type="button" class="card-product__button button">
-								<span>Добавить в заказ</span>
+								<span>Показать в корзине</span>
 								<img src="img/icons/plus.svg" alt="" class="card-product__plus">
 							</button>
 						</div>
@@ -485,7 +485,7 @@
 					<h2 class="title2">Завтраки</h2>
 					<div class="products__content">
 						<div class="card-product white">
-							<div class="card-product__item">
+							<div data-popup="#product15" class="card-product__item">
 								<div class="card-product__image">
 									<picture><source srcset="img/image2.webp" type="image/webp"><img src="img/image2.png" alt=""></picture>
 								</div>
@@ -506,12 +506,12 @@
 								</div>
 							</div>
 							<button type="button" class="card-product__button button btn-black">
-								<span>Добавить в заказ</span>
+								<span>Показать в корзине</span>
 								<img src="img/icons/plus.svg" alt="" class="card-product__plus">
 							</button>
 						</div>
 						<div class="card-product white">
-							<div class="card-product__item">
+							<div data-popup="#product16" class="card-product__item">
 								<div class="card-product__image">
 									<picture><source srcset="img/image2.webp" type="image/webp"><img src="img/image2.png" alt=""></picture>
 								</div>
@@ -532,12 +532,12 @@
 								</div>
 							</div>
 							<button type="button" class="card-product__button button btn-black">
-								<span>Добавить в заказ</span>
+								<span>Показать в корзине</span>
 								<img src="img/icons/plus.svg" alt="" class="card-product__plus">
 							</button>
 						</div>
 						<div class="card-product">
-							<div class="card-product__item">
+							<div data-popup="#product17" class="card-product__item">
 								<div class="card-product__image">
 									<picture><source srcset="img/image3.webp" type="image/webp"><img src="img/image3.png" alt=""></picture>
 									<div class="publicity">
@@ -562,7 +562,7 @@
 							</a>
 						</div>
 						<div class="card-product white">
-							<div class="card-product__item">
+							<div data-popup="#product18" class="card-product__item">
 								<div class="card-product__image">
 									<picture><source srcset="img/image2.webp" type="image/webp"><img src="img/image2.png" alt=""></picture>
 								</div>
@@ -583,7 +583,7 @@
 								</div>
 							</div>
 							<button type="button" class="card-product__button button btn-black">
-								<span>Добавить в заказ</span>
+								<span>Показать в корзине</span>
 								<img src="img/icons/plus.svg" alt="" class="card-product__plus">
 							</button>
 						</div>
@@ -595,7 +595,7 @@
 					<h2 class="title2">Салаты</h2>
 					<div class="products__content">
 						<div class="card-product white">
-							<div class="card-product__item">
+							<div data-popup="#product19" class="card-product__item">
 								<div class="card-product__image">
 									<picture><source srcset="img/image2.webp" type="image/webp"><img src="img/image2.png" alt=""></picture>
 								</div>
@@ -616,12 +616,12 @@
 								</div>
 							</div>
 							<button type="button" class="card-product__button button btn-black">
-								<span>Добавить в заказ</span>
+								<span>Показать в корзине</span>
 								<img src="img/icons/plus.svg" alt="" class="card-product__plus">
 							</button>
 						</div>
 						<div class="card-product white">
-							<div class="card-product__item">
+							<div data-popup="#product20" class="card-product__item">
 								<div class="card-product__image">
 									<picture><source srcset="img/image2.webp" type="image/webp"><img src="img/image2.png" alt=""></picture>
 								</div>
@@ -642,12 +642,12 @@
 								</div>
 							</div>
 							<button type="button" class="card-product__button button btn-black">
-								<span>Добавить в заказ</span>
+								<span>Показать в корзине</span>
 								<img src="img/icons/plus.svg" alt="" class="card-product__plus">
 							</button>
 						</div>
 						<div class="card-product">
-							<div class="card-product__item">
+							<div data-popup="#product21" class="card-product__item">
 								<div class="card-product__image">
 									<picture><source srcset="img/image3.webp" type="image/webp"><img src="img/image3.png" alt=""></picture>
 									<div class="publicity">
@@ -672,7 +672,7 @@
 							</a>
 						</div>
 						<div class="card-product white">
-							<div class="card-product__item">
+							<div data-popup="#product22" class="card-product__item">
 								<div class="card-product__image">
 									<picture><source srcset="img/image2.webp" type="image/webp"><img src="img/image2.png" alt=""></picture>
 								</div>
@@ -693,7 +693,7 @@
 								</div>
 							</div>
 							<button type="button" class="card-product__button button btn-black">
-								<span>Добавить в заказ</span>
+								<span>Показать в корзине</span>
 								<img src="img/icons/plus.svg" alt="" class="card-product__plus">
 							</button>
 						</div>
@@ -720,8 +720,8 @@
 								<button data-quantity-plus type="button" class="quantity__button quantity__button_plus"></button>
 							</div>
 							<button type="button" class="top-footer__button button">
-								<span>Добавить в заказ</span>
-								<img src="img/icons/plus.svg" alt="" class="card-product__plus">
+								<span class="add-basket">Добавить в заказ</span>
+								<span data-popup="#order" class="show-basket">Показать в корзине</span>
 							</button>
 						</div>
 					</div>
@@ -770,7 +770,2086 @@
 			</div>
 		</footer>
 	</div>
-	<div id="one" class="card-product-block popup">
+	<div id="product1" class="card-product-block popup">
+		<div class="popup__content">
+			<div class="popup__container">
+				<button data-close type="button" class="popup__close">
+					<img src="img/icons/close.svg" alt="">
+				</button>
+				<div class="popup__card-product-block">
+					<div class="card-product-block__item">
+						<div class="card-product-block__image">
+							<picture><source srcset="img/image1.webp" type="image/webp"><img loading="lazy" src="img/image1.png" alt=""></picture>
+						</div>
+						<div class="card-product-block__descr">
+							<div class="card-product-block__title">
+								Ароматный базилик, вяленные помидоры,
+								томатный соус и сыр моцарелла на хрустящем тесте
+								(основа для пиццы 30x30 см)
+							</div>
+							<div class="card-product-block__bottom">
+								<div class="card-product-block__left">
+									<span>
+										на 100 г
+									</span>
+									172 ккал / 7 белки / 4 жиры / 26 углеводы 20 минут
+								</div>
+								<div class="card-product-block__right">
+									<div class="card-product-block__text">
+										<img src="img/icons/star-orange.svg" alt="">
+										<span>4,9</span>
+									</div>
+									<div class="card-product-block__text">
+										<img src="img/icons/clock.svg" alt="">
+										<span>20 мин</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-product-block__item">
+						<div class="card-product-block__descr">
+							<div class="card-product-block__name">Добавки к пицце</div>
+							<div class="checkboxes">
+								<div class="checkbox">
+									<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_1" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Не требуется
+										</span>
+									</label>
+								</div>
+								<div class="checkbox">
+									<input id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_2" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Каперсы (7 г) <span class="cl"> +60 Р</span>
+										</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_3" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Пармезан (20 г) <span class="cl"> +90 Р</span>
+										</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_4" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Каперсы (7 г) <span class="cl"> +60 Р</span>
+										</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_5" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_5" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Пармезан (20 г) <span class="cl"> +90 Р</span>
+										</span></label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="product2" class="card-product-block popup">
+		<div class="popup__content">
+			<div class="popup__container">
+				<button data-close type="button" class="popup__close">
+					<img src="img/icons/close.svg" alt="">
+				</button>
+				<div class="popup__card-product-block">
+					<div class="card-product-block__item">
+						<div class="card-product-block__image">
+							<picture><source srcset="img/image1.webp" type="image/webp"><img loading="lazy" src="img/image1.png" alt=""></picture>
+						</div>
+						<div class="card-product-block__descr">
+							<div class="card-product-block__title">
+								Ароматный базилик, вяленные помидоры,
+								томатный соус и сыр моцарелла на хрустящем тесте
+								(основа для пиццы 30x30 см)
+							</div>
+							<div class="card-product-block__bottom">
+								<div class="card-product-block__left">
+									<span>
+										на 100 г
+									</span>
+									172 ккал / 7 белки / 4 жиры / 26 углеводы 20 минут
+								</div>
+								<div class="card-product-block__right">
+									<div class="card-product-block__text">
+										<img src="img/icons/star-orange.svg" alt="">
+										<span>4,9</span>
+									</div>
+									<div class="card-product-block__text">
+										<img src="img/icons/clock.svg" alt="">
+										<span>20 мин</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-product-block__item">
+						<div class="card-product-block__descr">
+							<div class="card-product-block__name">Добавки к пицце</div>
+							<div class="checkboxes">
+								<div class="checkbox">
+									<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_1" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Не требуется
+										</span>
+									</label>
+								</div>
+								<div class="checkbox">
+									<input id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_2" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Каперсы (7 г) <span class="cl"> +60 Р</span>
+										</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_3" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Пармезан (20 г) <span class="cl"> +90 Р</span>
+										</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_4" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Каперсы (7 г) <span class="cl"> +60 Р</span>
+										</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_5" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_5" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Пармезан (20 г) <span class="cl"> +90 Р</span>
+										</span></label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="product3" class="card-product-block popup">
+		<div class="popup__content">
+			<div class="popup__container">
+				<button data-close type="button" class="popup__close">
+					<img src="img/icons/close.svg" alt="">
+				</button>
+				<div class="popup__card-product-block">
+					<div class="card-product-block__item">
+						<div class="card-product-block__image">
+							<picture><source srcset="img/image1.webp" type="image/webp"><img loading="lazy" src="img/image1.png" alt=""></picture>
+						</div>
+						<div class="card-product-block__descr">
+							<div class="card-product-block__title">
+								Ароматный базилик, вяленные помидоры,
+								томатный соус и сыр моцарелла на хрустящем тесте
+								(основа для пиццы 30x30 см)
+							</div>
+							<div class="card-product-block__bottom">
+								<div class="card-product-block__left">
+									<span>
+										на 100 г
+									</span>
+									172 ккал / 7 белки / 4 жиры / 26 углеводы 20 минут
+								</div>
+								<div class="card-product-block__right">
+									<div class="card-product-block__text">
+										<img src="img/icons/star-orange.svg" alt="">
+										<span>4,9</span>
+									</div>
+									<div class="card-product-block__text">
+										<img src="img/icons/clock.svg" alt="">
+										<span>20 мин</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-product-block__item">
+						<div class="card-product-block__descr">
+							<div class="card-product-block__name">Добавки к пицце</div>
+							<div class="checkboxes">
+								<div class="checkbox">
+									<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_1" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Не требуется
+										</span>
+									</label>
+								</div>
+								<div class="checkbox">
+									<input id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_2" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Каперсы (7 г) <span class="cl"> +60 Р</span>
+										</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_3" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Пармезан (20 г) <span class="cl"> +90 Р</span>
+										</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_4" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Каперсы (7 г) <span class="cl"> +60 Р</span>
+										</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_5" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_5" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Пармезан (20 г) <span class="cl"> +90 Р</span>
+										</span></label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="product4" class="card-product-block popup">
+		<div class="popup__content">
+			<div class="popup__container">
+				<button data-close type="button" class="popup__close">
+					<img src="img/icons/close.svg" alt="">
+				</button>
+				<div class="popup__card-product-block">
+					<div class="card-product-block__item">
+						<div class="card-product-block__image">
+							<picture><source srcset="img/image1.webp" type="image/webp"><img loading="lazy" src="img/image1.png" alt=""></picture>
+						</div>
+						<div class="card-product-block__descr">
+							<div class="card-product-block__title">
+								Ароматный базилик, вяленные помидоры,
+								томатный соус и сыр моцарелла на хрустящем тесте
+								(основа для пиццы 30x30 см)
+							</div>
+							<div class="card-product-block__bottom">
+								<div class="card-product-block__left">
+									<span>
+										на 100 г
+									</span>
+									172 ккал / 7 белки / 4 жиры / 26 углеводы 20 минут
+								</div>
+								<div class="card-product-block__right">
+									<div class="card-product-block__text">
+										<img src="img/icons/star-orange.svg" alt="">
+										<span>4,9</span>
+									</div>
+									<div class="card-product-block__text">
+										<img src="img/icons/clock.svg" alt="">
+										<span>20 мин</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-product-block__item">
+						<div class="card-product-block__descr">
+							<div class="card-product-block__name">Добавки к пицце</div>
+							<div class="checkboxes">
+								<div class="checkbox">
+									<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_1" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Не требуется
+										</span>
+									</label>
+								</div>
+								<div class="checkbox">
+									<input id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_2" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Каперсы (7 г) <span class="cl"> +60 Р</span>
+										</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_3" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Пармезан (20 г) <span class="cl"> +90 Р</span>
+										</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_4" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Каперсы (7 г) <span class="cl"> +60 Р</span>
+										</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_5" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_5" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Пармезан (20 г) <span class="cl"> +90 Р</span>
+										</span></label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="product5" class="card-product-block popup">
+		<div class="popup__content">
+			<div class="popup__container">
+				<button data-close type="button" class="popup__close">
+					<img src="img/icons/close.svg" alt="">
+				</button>
+				<div class="popup__card-product-block">
+					<div class="card-product-block__item">
+						<div class="card-product-block__image">
+							<picture><source srcset="img/image1.webp" type="image/webp"><img loading="lazy" src="img/image1.png" alt=""></picture>
+						</div>
+						<div class="card-product-block__descr">
+							<div class="card-product-block__title">
+								Ароматный базилик, вяленные помидоры,
+								томатный соус и сыр моцарелла на хрустящем тесте
+								(основа для пиццы 30x30 см)
+							</div>
+							<div class="card-product-block__bottom">
+								<div class="card-product-block__left">
+									<span>
+										на 100 г
+									</span>
+									172 ккал / 7 белки / 4 жиры / 26 углеводы 20 минут
+								</div>
+								<div class="card-product-block__right">
+									<div class="card-product-block__text">
+										<img src="img/icons/star-orange.svg" alt="">
+										<span>4,9</span>
+									</div>
+									<div class="card-product-block__text">
+										<img src="img/icons/clock.svg" alt="">
+										<span>20 мин</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-product-block__item">
+						<div class="card-product-block__descr">
+							<div class="card-product-block__name">Добавки к пицце</div>
+							<div class="checkboxes">
+								<div class="checkbox">
+									<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_1" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Не требуется
+										</span>
+									</label>
+								</div>
+								<div class="checkbox">
+									<input id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_2" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Каперсы (7 г) <span class="cl"> +60 Р</span>
+										</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_3" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Пармезан (20 г) <span class="cl"> +90 Р</span>
+										</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_4" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Каперсы (7 г) <span class="cl"> +60 Р</span>
+										</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_5" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_5" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Пармезан (20 г) <span class="cl"> +90 Р</span>
+										</span></label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="product6" class="card-product-block popup">
+		<div class="popup__content">
+			<div class="popup__container">
+				<button data-close type="button" class="popup__close">
+					<img src="img/icons/close.svg" alt="">
+				</button>
+				<div class="popup__card-product-block">
+					<div class="card-product-block__item">
+						<div class="card-product-block__image">
+							<picture><source srcset="img/image1.webp" type="image/webp"><img loading="lazy" src="img/image1.png" alt=""></picture>
+						</div>
+						<div class="card-product-block__descr">
+							<div class="card-product-block__title">
+								Ароматный базилик, вяленные помидоры,
+								томатный соус и сыр моцарелла на хрустящем тесте
+								(основа для пиццы 30x30 см)
+							</div>
+							<div class="card-product-block__bottom">
+								<div class="card-product-block__left">
+									<span>
+										на 100 г
+									</span>
+									172 ккал / 7 белки / 4 жиры / 26 углеводы 20 минут
+								</div>
+								<div class="card-product-block__right">
+									<div class="card-product-block__text">
+										<img src="img/icons/star-orange.svg" alt="">
+										<span>4,9</span>
+									</div>
+									<div class="card-product-block__text">
+										<img src="img/icons/clock.svg" alt="">
+										<span>20 мин</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-product-block__item">
+						<div class="card-product-block__descr">
+							<div class="card-product-block__name">Добавки к пицце</div>
+							<div class="checkboxes">
+								<div class="checkbox">
+									<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_1" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Не требуется
+										</span>
+									</label>
+								</div>
+								<div class="checkbox">
+									<input id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_2" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Каперсы (7 г) <span class="cl"> +60 Р</span>
+										</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_3" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Пармезан (20 г) <span class="cl"> +90 Р</span>
+										</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_4" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Каперсы (7 г) <span class="cl"> +60 Р</span>
+										</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_5" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_5" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Пармезан (20 г) <span class="cl"> +90 Р</span>
+										</span></label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="product7" class="card-product-block popup">
+		<div class="popup__content">
+			<div class="popup__container">
+				<button data-close type="button" class="popup__close">
+					<img src="img/icons/close.svg" alt="">
+				</button>
+				<div class="popup__card-product-block">
+					<div class="card-product-block__item">
+						<div class="card-product-block__image">
+							<picture><source srcset="img/image1.webp" type="image/webp"><img loading="lazy" src="img/image1.png" alt=""></picture>
+						</div>
+						<div class="card-product-block__descr">
+							<div class="card-product-block__title">
+								Ароматный базилик, вяленные помидоры,
+								томатный соус и сыр моцарелла на хрустящем тесте
+								(основа для пиццы 30x30 см)
+							</div>
+							<div class="card-product-block__bottom">
+								<div class="card-product-block__left">
+									<span>
+										на 100 г
+									</span>
+									172 ккал / 7 белки / 4 жиры / 26 углеводы 20 минут
+								</div>
+								<div class="card-product-block__right">
+									<div class="card-product-block__text">
+										<img src="img/icons/star-orange.svg" alt="">
+										<span>4,9</span>
+									</div>
+									<div class="card-product-block__text">
+										<img src="img/icons/clock.svg" alt="">
+										<span>20 мин</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-product-block__item">
+						<div class="card-product-block__descr">
+							<div class="card-product-block__name">Добавки к пицце</div>
+							<div class="checkboxes">
+								<div class="checkbox">
+									<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_1" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Не требуется
+										</span>
+									</label>
+								</div>
+								<div class="checkbox">
+									<input id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_2" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Каперсы (7 г) <span class="cl"> +60 Р</span>
+										</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_3" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Пармезан (20 г) <span class="cl"> +90 Р</span>
+										</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_4" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Каперсы (7 г) <span class="cl"> +60 Р</span>
+										</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_5" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_5" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Пармезан (20 г) <span class="cl"> +90 Р</span>
+										</span></label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="product8" class="card-product-block popup">
+		<div class="popup__content">
+			<div class="popup__container">
+				<button data-close type="button" class="popup__close">
+					<img src="img/icons/close.svg" alt="">
+				</button>
+				<div class="popup__card-product-block">
+					<div class="card-product-block__item">
+						<div class="card-product-block__image">
+							<picture><source srcset="img/image1.webp" type="image/webp"><img loading="lazy" src="img/image1.png" alt=""></picture>
+						</div>
+						<div class="card-product-block__descr">
+							<div class="card-product-block__title">
+								Ароматный базилик, вяленные помидоры,
+								томатный соус и сыр моцарелла на хрустящем тесте
+								(основа для пиццы 30x30 см)
+							</div>
+							<div class="card-product-block__bottom">
+								<div class="card-product-block__left">
+									<span>
+										на 100 г
+									</span>
+									172 ккал / 7 белки / 4 жиры / 26 углеводы 20 минут
+								</div>
+								<div class="card-product-block__right">
+									<div class="card-product-block__text">
+										<img src="img/icons/star-orange.svg" alt="">
+										<span>4,9</span>
+									</div>
+									<div class="card-product-block__text">
+										<img src="img/icons/clock.svg" alt="">
+										<span>20 мин</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-product-block__item">
+						<div class="card-product-block__descr">
+							<div class="card-product-block__name">Добавки к пицце</div>
+							<div class="checkboxes">
+								<div class="checkbox">
+									<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_1" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Не требуется
+										</span>
+									</label>
+								</div>
+								<div class="checkbox">
+									<input id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_2" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Каперсы (7 г) <span class="cl"> +60 Р</span>
+										</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_3" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Пармезан (20 г) <span class="cl"> +90 Р</span>
+										</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_4" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Каперсы (7 г) <span class="cl"> +60 Р</span>
+										</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_5" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_5" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Пармезан (20 г) <span class="cl"> +90 Р</span>
+										</span></label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="product9" class="card-product-block popup">
+		<div class="popup__content">
+			<div class="popup__container">
+				<button data-close type="button" class="popup__close">
+					<img src="img/icons/close.svg" alt="">
+				</button>
+				<div class="popup__card-product-block">
+					<div class="card-product-block__item">
+						<div class="card-product-block__image">
+							<picture><source srcset="img/image1.webp" type="image/webp"><img loading="lazy" src="img/image1.png" alt=""></picture>
+						</div>
+						<div class="card-product-block__descr">
+							<div class="card-product-block__title">
+								Ароматный базилик, вяленные помидоры,
+								томатный соус и сыр моцарелла на хрустящем тесте
+								(основа для пиццы 30x30 см)
+							</div>
+							<div class="card-product-block__bottom">
+								<div class="card-product-block__left">
+									<span>
+										на 100 г
+									</span>
+									172 ккал / 7 белки / 4 жиры / 26 углеводы 20 минут
+								</div>
+								<div class="card-product-block__right">
+									<div class="card-product-block__text">
+										<img src="img/icons/star-orange.svg" alt="">
+										<span>4,9</span>
+									</div>
+									<div class="card-product-block__text">
+										<img src="img/icons/clock.svg" alt="">
+										<span>20 мин</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-product-block__item">
+						<div class="card-product-block__descr">
+							<div class="card-product-block__name">Добавки к пицце</div>
+							<div class="checkboxes">
+								<div class="checkbox">
+									<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_1" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Не требуется
+										</span>
+									</label>
+								</div>
+								<div class="checkbox">
+									<input id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_2" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Каперсы (7 г) <span class="cl"> +60 Р</span>
+										</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_3" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Пармезан (20 г) <span class="cl"> +90 Р</span>
+										</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_4" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Каперсы (7 г) <span class="cl"> +60 Р</span>
+										</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_5" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_5" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Пармезан (20 г) <span class="cl"> +90 Р</span>
+										</span></label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="product10" class="card-product-block popup">
+		<div class="popup__content">
+			<div class="popup__container">
+				<button data-close type="button" class="popup__close">
+					<img src="img/icons/close.svg" alt="">
+				</button>
+				<div class="popup__card-product-block">
+					<div class="card-product-block__item">
+						<div class="card-product-block__image">
+							<picture><source srcset="img/image1.webp" type="image/webp"><img loading="lazy" src="img/image1.png" alt=""></picture>
+						</div>
+						<div class="card-product-block__descr">
+							<div class="card-product-block__title">
+								Ароматный базилик, вяленные помидоры,
+								томатный соус и сыр моцарелла на хрустящем тесте
+								(основа для пиццы 30x30 см)
+							</div>
+							<div class="card-product-block__bottom">
+								<div class="card-product-block__left">
+									<span>
+										на 100 г
+									</span>
+									172 ккал / 7 белки / 4 жиры / 26 углеводы 20 минут
+								</div>
+								<div class="card-product-block__right">
+									<div class="card-product-block__text">
+										<img src="img/icons/star-orange.svg" alt="">
+										<span>4,9</span>
+									</div>
+									<div class="card-product-block__text">
+										<img src="img/icons/clock.svg" alt="">
+										<span>20 мин</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-product-block__item">
+						<div class="card-product-block__descr">
+							<div class="card-product-block__name">Добавки к пицце</div>
+							<div class="checkboxes">
+								<div class="checkbox">
+									<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_1" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Не требуется
+										</span>
+									</label>
+								</div>
+								<div class="checkbox">
+									<input id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_2" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Каперсы (7 г) <span class="cl"> +60 Р</span>
+										</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_3" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Пармезан (20 г) <span class="cl"> +90 Р</span>
+										</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_4" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Каперсы (7 г) <span class="cl"> +60 Р</span>
+										</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_5" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_5" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Пармезан (20 г) <span class="cl"> +90 Р</span>
+										</span></label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="product11" class="card-product-block popup">
+		<div class="popup__content">
+			<div class="popup__container">
+				<button data-close type="button" class="popup__close">
+					<img src="img/icons/close.svg" alt="">
+				</button>
+				<div class="popup__card-product-block">
+					<div class="card-product-block__item">
+						<div class="card-product-block__image">
+							<picture><source srcset="img/image1.webp" type="image/webp"><img loading="lazy" src="img/image1.png" alt=""></picture>
+						</div>
+						<div class="card-product-block__descr">
+							<div class="card-product-block__title">
+								Ароматный базилик, вяленные помидоры,
+								томатный соус и сыр моцарелла на хрустящем тесте
+								(основа для пиццы 30x30 см)
+							</div>
+							<div class="card-product-block__bottom">
+								<div class="card-product-block__left">
+									<span>
+										на 100 г
+									</span>
+									172 ккал / 7 белки / 4 жиры / 26 углеводы 20 минут
+								</div>
+								<div class="card-product-block__right">
+									<div class="card-product-block__text">
+										<img src="img/icons/star-orange.svg" alt="">
+										<span>4,9</span>
+									</div>
+									<div class="card-product-block__text">
+										<img src="img/icons/clock.svg" alt="">
+										<span>20 мин</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-product-block__item">
+						<div class="card-product-block__descr">
+							<div class="card-product-block__name">Добавки к пицце</div>
+							<div class="checkboxes">
+								<div class="checkbox">
+									<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_1" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Не требуется
+										</span>
+									</label>
+								</div>
+								<div class="checkbox">
+									<input id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_2" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Каперсы (7 г) <span class="cl"> +60 Р</span>
+										</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_3" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Пармезан (20 г) <span class="cl"> +90 Р</span>
+										</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_4" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Каперсы (7 г) <span class="cl"> +60 Р</span>
+										</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_5" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_5" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Пармезан (20 г) <span class="cl"> +90 Р</span>
+										</span></label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="product12" class="card-product-block popup">
+		<div class="popup__content">
+			<div class="popup__container">
+				<button data-close type="button" class="popup__close">
+					<img src="img/icons/close.svg" alt="">
+				</button>
+				<div class="popup__card-product-block">
+					<div class="card-product-block__item">
+						<div class="card-product-block__image">
+							<picture><source srcset="img/image1.webp" type="image/webp"><img loading="lazy" src="img/image1.png" alt=""></picture>
+						</div>
+						<div class="card-product-block__descr">
+							<div class="card-product-block__title">
+								Ароматный базилик, вяленные помидоры,
+								томатный соус и сыр моцарелла на хрустящем тесте
+								(основа для пиццы 30x30 см)
+							</div>
+							<div class="card-product-block__bottom">
+								<div class="card-product-block__left">
+									<span>
+										на 100 г
+									</span>
+									172 ккал / 7 белки / 4 жиры / 26 углеводы 20 минут
+								</div>
+								<div class="card-product-block__right">
+									<div class="card-product-block__text">
+										<img src="img/icons/star-orange.svg" alt="">
+										<span>4,9</span>
+									</div>
+									<div class="card-product-block__text">
+										<img src="img/icons/clock.svg" alt="">
+										<span>20 мин</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-product-block__item">
+						<div class="card-product-block__descr">
+							<div class="card-product-block__name">Добавки к пицце</div>
+							<div class="checkboxes">
+								<div class="checkbox">
+									<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_1" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Не требуется
+										</span>
+									</label>
+								</div>
+								<div class="checkbox">
+									<input id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_2" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Каперсы (7 г) <span class="cl"> +60 Р</span>
+										</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_3" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Пармезан (20 г) <span class="cl"> +90 Р</span>
+										</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_4" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Каперсы (7 г) <span class="cl"> +60 Р</span>
+										</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_5" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_5" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Пармезан (20 г) <span class="cl"> +90 Р</span>
+										</span></label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="product13" class="card-product-block popup">
+		<div class="popup__content">
+			<div class="popup__container">
+				<button data-close type="button" class="popup__close">
+					<img src="img/icons/close.svg" alt="">
+				</button>
+				<div class="popup__card-product-block">
+					<div class="card-product-block__item">
+						<div class="card-product-block__image">
+							<picture><source srcset="img/image1.webp" type="image/webp"><img loading="lazy" src="img/image1.png" alt=""></picture>
+						</div>
+						<div class="card-product-block__descr">
+							<div class="card-product-block__title">
+								Ароматный базилик, вяленные помидоры,
+								томатный соус и сыр моцарелла на хрустящем тесте
+								(основа для пиццы 30x30 см)
+							</div>
+							<div class="card-product-block__bottom">
+								<div class="card-product-block__left">
+									<span>
+										на 100 г
+									</span>
+									172 ккал / 7 белки / 4 жиры / 26 углеводы 20 минут
+								</div>
+								<div class="card-product-block__right">
+									<div class="card-product-block__text">
+										<img src="img/icons/star-orange.svg" alt="">
+										<span>4,9</span>
+									</div>
+									<div class="card-product-block__text">
+										<img src="img/icons/clock.svg" alt="">
+										<span>20 мин</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-product-block__item">
+						<div class="card-product-block__descr">
+							<div class="card-product-block__name">Добавки к пицце</div>
+							<div class="checkboxes">
+								<div class="checkbox">
+									<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_1" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Не требуется
+										</span>
+									</label>
+								</div>
+								<div class="checkbox">
+									<input id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_2" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Каперсы (7 г) <span class="cl"> +60 Р</span>
+										</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_3" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Пармезан (20 г) <span class="cl"> +90 Р</span>
+										</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_4" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Каперсы (7 г) <span class="cl"> +60 Р</span>
+										</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_5" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_5" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Пармезан (20 г) <span class="cl"> +90 Р</span>
+										</span></label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="product14" class="card-product-block popup">
+		<div class="popup__content">
+			<div class="popup__container">
+				<button data-close type="button" class="popup__close">
+					<img src="img/icons/close.svg" alt="">
+				</button>
+				<div class="popup__card-product-block">
+					<div class="card-product-block__item">
+						<div class="card-product-block__image">
+							<picture><source srcset="img/image1.webp" type="image/webp"><img loading="lazy" src="img/image1.png" alt=""></picture>
+						</div>
+						<div class="card-product-block__descr">
+							<div class="card-product-block__title">
+								Ароматный базилик, вяленные помидоры,
+								томатный соус и сыр моцарелла на хрустящем тесте
+								(основа для пиццы 30x30 см)
+							</div>
+							<div class="card-product-block__bottom">
+								<div class="card-product-block__left">
+									<span>
+										на 100 г
+									</span>
+									172 ккал / 7 белки / 4 жиры / 26 углеводы 20 минут
+								</div>
+								<div class="card-product-block__right">
+									<div class="card-product-block__text">
+										<img src="img/icons/star-orange.svg" alt="">
+										<span>4,9</span>
+									</div>
+									<div class="card-product-block__text">
+										<img src="img/icons/clock.svg" alt="">
+										<span>20 мин</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-product-block__item">
+						<div class="card-product-block__descr">
+							<div class="card-product-block__name">Добавки к пицце</div>
+							<div class="checkboxes">
+								<div class="checkbox">
+									<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_1" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Не требуется
+										</span>
+									</label>
+								</div>
+								<div class="checkbox">
+									<input id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_2" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Каперсы (7 г) <span class="cl"> +60 Р</span>
+										</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_3" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Пармезан (20 г) <span class="cl"> +90 Р</span>
+										</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_4" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Каперсы (7 г) <span class="cl"> +60 Р</span>
+										</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_5" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_5" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Пармезан (20 г) <span class="cl"> +90 Р</span>
+										</span></label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="product15" class="card-product-block popup">
+		<div class="popup__content">
+			<div class="popup__container">
+				<button data-close type="button" class="popup__close">
+					<img src="img/icons/close.svg" alt="">
+				</button>
+				<div class="popup__card-product-block">
+					<div class="card-product-block__item">
+						<div class="card-product-block__image">
+							<picture><source srcset="img/image1.webp" type="image/webp"><img loading="lazy" src="img/image1.png" alt=""></picture>
+						</div>
+						<div class="card-product-block__descr">
+							<div class="card-product-block__title">
+								Ароматный базилик, вяленные помидоры,
+								томатный соус и сыр моцарелла на хрустящем тесте
+								(основа для пиццы 30x30 см)
+							</div>
+							<div class="card-product-block__bottom">
+								<div class="card-product-block__left">
+									<span>
+										на 100 г
+									</span>
+									172 ккал / 7 белки / 4 жиры / 26 углеводы 20 минут
+								</div>
+								<div class="card-product-block__right">
+									<div class="card-product-block__text">
+										<img src="img/icons/star-orange.svg" alt="">
+										<span>4,9</span>
+									</div>
+									<div class="card-product-block__text">
+										<img src="img/icons/clock.svg" alt="">
+										<span>20 мин</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-product-block__item">
+						<div class="card-product-block__descr">
+							<div class="card-product-block__name">Добавки к пицце</div>
+							<div class="checkboxes">
+								<div class="checkbox">
+									<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_1" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Не требуется
+										</span>
+									</label>
+								</div>
+								<div class="checkbox">
+									<input id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_2" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Каперсы (7 г) <span class="cl"> +60 Р</span>
+										</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_3" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Пармезан (20 г) <span class="cl"> +90 Р</span>
+										</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_4" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Каперсы (7 г) <span class="cl"> +60 Р</span>
+										</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_5" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_5" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Пармезан (20 г) <span class="cl"> +90 Р</span>
+										</span></label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="product16" class="card-product-block popup">
+		<div class="popup__content">
+			<div class="popup__container">
+				<button data-close type="button" class="popup__close">
+					<img src="img/icons/close.svg" alt="">
+				</button>
+				<div class="popup__card-product-block">
+					<div class="card-product-block__item">
+						<div class="card-product-block__image">
+							<picture><source srcset="img/image1.webp" type="image/webp"><img loading="lazy" src="img/image1.png" alt=""></picture>
+						</div>
+						<div class="card-product-block__descr">
+							<div class="card-product-block__title">
+								Ароматный базилик, вяленные помидоры,
+								томатный соус и сыр моцарелла на хрустящем тесте
+								(основа для пиццы 30x30 см)
+							</div>
+							<div class="card-product-block__bottom">
+								<div class="card-product-block__left">
+									<span>
+										на 100 г
+									</span>
+									172 ккал / 7 белки / 4 жиры / 26 углеводы 20 минут
+								</div>
+								<div class="card-product-block__right">
+									<div class="card-product-block__text">
+										<img src="img/icons/star-orange.svg" alt="">
+										<span>4,9</span>
+									</div>
+									<div class="card-product-block__text">
+										<img src="img/icons/clock.svg" alt="">
+										<span>20 мин</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-product-block__item">
+						<div class="card-product-block__descr">
+							<div class="card-product-block__name">Добавки к пицце</div>
+							<div class="checkboxes">
+								<div class="checkbox">
+									<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_1" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Не требуется
+										</span>
+									</label>
+								</div>
+								<div class="checkbox">
+									<input id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_2" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Каперсы (7 г) <span class="cl"> +60 Р</span>
+										</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_3" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Пармезан (20 г) <span class="cl"> +90 Р</span>
+										</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_4" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Каперсы (7 г) <span class="cl"> +60 Р</span>
+										</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_5" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_5" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Пармезан (20 г) <span class="cl"> +90 Р</span>
+										</span></label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="product17" class="card-product-block popup">
+		<div class="popup__content">
+			<div class="popup__container">
+				<button data-close type="button" class="popup__close">
+					<img src="img/icons/close.svg" alt="">
+				</button>
+				<div class="popup__card-product-block">
+					<div class="card-product-block__item">
+						<div class="card-product-block__image">
+							<picture><source srcset="img/image1.webp" type="image/webp"><img loading="lazy" src="img/image1.png" alt=""></picture>
+						</div>
+						<div class="card-product-block__descr">
+							<div class="card-product-block__title">
+								Ароматный базилик, вяленные помидоры,
+								томатный соус и сыр моцарелла на хрустящем тесте
+								(основа для пиццы 30x30 см)
+							</div>
+							<div class="card-product-block__bottom">
+								<div class="card-product-block__left">
+									<span>
+										на 100 г
+									</span>
+									172 ккал / 7 белки / 4 жиры / 26 углеводы 20 минут
+								</div>
+								<div class="card-product-block__right">
+									<div class="card-product-block__text">
+										<img src="img/icons/star-orange.svg" alt="">
+										<span>4,9</span>
+									</div>
+									<div class="card-product-block__text">
+										<img src="img/icons/clock.svg" alt="">
+										<span>20 мин</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-product-block__item">
+						<div class="card-product-block__descr">
+							<div class="card-product-block__name">Добавки к пицце</div>
+							<div class="checkboxes">
+								<div class="checkbox">
+									<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_1" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Не требуется
+										</span>
+									</label>
+								</div>
+								<div class="checkbox">
+									<input id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_2" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Каперсы (7 г) <span class="cl"> +60 Р</span>
+										</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_3" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Пармезан (20 г) <span class="cl"> +90 Р</span>
+										</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_4" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Каперсы (7 г) <span class="cl"> +60 Р</span>
+										</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_5" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_5" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Пармезан (20 г) <span class="cl"> +90 Р</span>
+										</span></label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="product18" class="card-product-block popup">
+		<div class="popup__content">
+			<div class="popup__container">
+				<button data-close type="button" class="popup__close">
+					<img src="img/icons/close.svg" alt="">
+				</button>
+				<div class="popup__card-product-block">
+					<div class="card-product-block__item">
+						<div class="card-product-block__image">
+							<picture><source srcset="img/image1.webp" type="image/webp"><img loading="lazy" src="img/image1.png" alt=""></picture>
+						</div>
+						<div class="card-product-block__descr">
+							<div class="card-product-block__title">
+								Ароматный базилик, вяленные помидоры,
+								томатный соус и сыр моцарелла на хрустящем тесте
+								(основа для пиццы 30x30 см)
+							</div>
+							<div class="card-product-block__bottom">
+								<div class="card-product-block__left">
+									<span>
+										на 100 г
+									</span>
+									172 ккал / 7 белки / 4 жиры / 26 углеводы 20 минут
+								</div>
+								<div class="card-product-block__right">
+									<div class="card-product-block__text">
+										<img src="img/icons/star-orange.svg" alt="">
+										<span>4,9</span>
+									</div>
+									<div class="card-product-block__text">
+										<img src="img/icons/clock.svg" alt="">
+										<span>20 мин</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-product-block__item">
+						<div class="card-product-block__descr">
+							<div class="card-product-block__name">Добавки к пицце</div>
+							<div class="checkboxes">
+								<div class="checkbox">
+									<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_1" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Не требуется
+										</span>
+									</label>
+								</div>
+								<div class="checkbox">
+									<input id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_2" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Каперсы (7 г) <span class="cl"> +60 Р</span>
+										</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_3" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Пармезан (20 г) <span class="cl"> +90 Р</span>
+										</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_4" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Каперсы (7 г) <span class="cl"> +60 Р</span>
+										</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_5" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_5" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Пармезан (20 г) <span class="cl"> +90 Р</span>
+										</span></label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="product19" class="card-product-block popup">
+		<div class="popup__content">
+			<div class="popup__container">
+				<button data-close type="button" class="popup__close">
+					<img src="img/icons/close.svg" alt="">
+				</button>
+				<div class="popup__card-product-block">
+					<div class="card-product-block__item">
+						<div class="card-product-block__image">
+							<picture><source srcset="img/image1.webp" type="image/webp"><img loading="lazy" src="img/image1.png" alt=""></picture>
+						</div>
+						<div class="card-product-block__descr">
+							<div class="card-product-block__title">
+								Ароматный базилик, вяленные помидоры,
+								томатный соус и сыр моцарелла на хрустящем тесте
+								(основа для пиццы 30x30 см)
+							</div>
+							<div class="card-product-block__bottom">
+								<div class="card-product-block__left">
+									<span>
+										на 100 г
+									</span>
+									172 ккал / 7 белки / 4 жиры / 26 углеводы 20 минут
+								</div>
+								<div class="card-product-block__right">
+									<div class="card-product-block__text">
+										<img src="img/icons/star-orange.svg" alt="">
+										<span>4,9</span>
+									</div>
+									<div class="card-product-block__text">
+										<img src="img/icons/clock.svg" alt="">
+										<span>20 мин</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-product-block__item">
+						<div class="card-product-block__descr">
+							<div class="card-product-block__name">Добавки к пицце</div>
+							<div class="checkboxes">
+								<div class="checkbox">
+									<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_1" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Не требуется
+										</span>
+									</label>
+								</div>
+								<div class="checkbox">
+									<input id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_2" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Каперсы (7 г) <span class="cl"> +60 Р</span>
+										</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_3" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Пармезан (20 г) <span class="cl"> +90 Р</span>
+										</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_4" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Каперсы (7 г) <span class="cl"> +60 Р</span>
+										</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_5" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_5" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Пармезан (20 г) <span class="cl"> +90 Р</span>
+										</span></label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="product20" class="card-product-block popup">
+		<div class="popup__content">
+			<div class="popup__container">
+				<button data-close type="button" class="popup__close">
+					<img src="img/icons/close.svg" alt="">
+				</button>
+				<div class="popup__card-product-block">
+					<div class="card-product-block__item">
+						<div class="card-product-block__image">
+							<picture><source srcset="img/image1.webp" type="image/webp"><img loading="lazy" src="img/image1.png" alt=""></picture>
+						</div>
+						<div class="card-product-block__descr">
+							<div class="card-product-block__title">
+								Ароматный базилик, вяленные помидоры,
+								томатный соус и сыр моцарелла на хрустящем тесте
+								(основа для пиццы 30x30 см)
+							</div>
+							<div class="card-product-block__bottom">
+								<div class="card-product-block__left">
+									<span>
+										на 100 г
+									</span>
+									172 ккал / 7 белки / 4 жиры / 26 углеводы 20 минут
+								</div>
+								<div class="card-product-block__right">
+									<div class="card-product-block__text">
+										<img src="img/icons/star-orange.svg" alt="">
+										<span>4,9</span>
+									</div>
+									<div class="card-product-block__text">
+										<img src="img/icons/clock.svg" alt="">
+										<span>20 мин</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-product-block__item">
+						<div class="card-product-block__descr">
+							<div class="card-product-block__name">Добавки к пицце</div>
+							<div class="checkboxes">
+								<div class="checkbox">
+									<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_1" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Не требуется
+										</span>
+									</label>
+								</div>
+								<div class="checkbox">
+									<input id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_2" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Каперсы (7 г) <span class="cl"> +60 Р</span>
+										</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_3" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Пармезан (20 г) <span class="cl"> +90 Р</span>
+										</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_4" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Каперсы (7 г) <span class="cl"> +60 Р</span>
+										</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_5" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_5" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Пармезан (20 г) <span class="cl"> +90 Р</span>
+										</span></label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="product21" class="card-product-block popup">
+		<div class="popup__content">
+			<div class="popup__container">
+				<button data-close type="button" class="popup__close">
+					<img src="img/icons/close.svg" alt="">
+				</button>
+				<div class="popup__card-product-block">
+					<div class="card-product-block__item">
+						<div class="card-product-block__image">
+							<picture><source srcset="img/image1.webp" type="image/webp"><img loading="lazy" src="img/image1.png" alt=""></picture>
+						</div>
+						<div class="card-product-block__descr">
+							<div class="card-product-block__title">
+								Ароматный базилик, вяленные помидоры,
+								томатный соус и сыр моцарелла на хрустящем тесте
+								(основа для пиццы 30x30 см)
+							</div>
+							<div class="card-product-block__bottom">
+								<div class="card-product-block__left">
+									<span>
+										на 100 г
+									</span>
+									172 ккал / 7 белки / 4 жиры / 26 углеводы 20 минут
+								</div>
+								<div class="card-product-block__right">
+									<div class="card-product-block__text">
+										<img src="img/icons/star-orange.svg" alt="">
+										<span>4,9</span>
+									</div>
+									<div class="card-product-block__text">
+										<img src="img/icons/clock.svg" alt="">
+										<span>20 мин</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-product-block__item">
+						<div class="card-product-block__descr">
+							<div class="card-product-block__name">Добавки к пицце</div>
+							<div class="checkboxes">
+								<div class="checkbox">
+									<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_1" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Не требуется
+										</span>
+									</label>
+								</div>
+								<div class="checkbox">
+									<input id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_2" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Каперсы (7 г) <span class="cl"> +60 Р</span>
+										</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_3" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Пармезан (20 г) <span class="cl"> +90 Р</span>
+										</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_4" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Каперсы (7 г) <span class="cl"> +60 Р</span>
+										</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_5" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_5" class="checkbox__label">
+										<span class="checkbox__icon">
+											<img loading="lazy" src="img/icons/check2.svg" alt="">
+										</span>
+										<span class="checkbox__text">
+											Пармезан (20 г) <span class="cl"> +90 Р</span>
+										</span></label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="product22" class="card-product-block popup">
 		<div class="popup__content">
 			<div class="popup__container">
 				<button data-close type="button" class="popup__close">
@@ -1232,7 +3311,7 @@
 			<span>Выбран способ оплаты</span>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20250613112310"></script>
+	<script src="js/app.min.js?_v=20250613135921"></script>
 </body>
 
 </html>

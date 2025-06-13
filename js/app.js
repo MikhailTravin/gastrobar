@@ -337,23 +337,42 @@
         } else functions_FLS(`[gotoBlock]: Йой... Такого блоку немає на сторінці: ${targetBlock}`);
     };
     function formQuantity() {
+        function updateButtonState(quantityBlock) {
+            const valueElement = quantityBlock.querySelector("[data-quantity-value]");
+            const card = quantityBlock.closest(".footer-product-card");
+            const button = card?.querySelector(".top-footer__button");
+            const value = parseInt(valueElement.value);
+            if (button) if (value >= 1) button.classList.add("_active"); else button.classList.remove("_active");
+        }
         document.addEventListener("click", (function(e) {
             let targetElement = e.target;
-            if (targetElement.closest("[data-quantity-plus]") || targetElement.closest("[data-quantity-minus]")) {
-                const valueElement = targetElement.closest("[data-quantity]").querySelector("[data-quantity-value]");
+            const quantityControl = targetElement.closest("[data-quantity-plus]") || targetElement.closest("[data-quantity-minus]");
+            if (quantityControl) {
+                const quantityBlock = targetElement.closest("[data-quantity]");
+                const valueElement = quantityBlock.querySelector("[data-quantity-value]");
                 let value = parseInt(valueElement.value);
                 if (targetElement.hasAttribute("data-quantity-plus")) {
                     value++;
                     if (+valueElement.dataset.quantityMax && +valueElement.dataset.quantityMax < value) value = valueElement.dataset.quantityMax;
                 } else {
-                    --value;
+                    value--;
                     if (+valueElement.dataset.quantityMin) {
                         if (+valueElement.dataset.quantityMin > value) value = valueElement.dataset.quantityMin;
-                    } else if (value < 1) value = 1;
+                    } else if (value < 1) value = 0;
                 }
-                targetElement.closest("[data-quantity]").querySelector("[data-quantity-value]").value = value;
+                valueElement.value = value;
+                if (value <= 0) {
+                    const orderColumn = quantityBlock.closest(".order__column");
+                    if (orderColumn) orderColumn.remove();
+                } else updateButtonState(quantityBlock);
             }
         }));
+        function initializeButtonsState() {
+            document.querySelectorAll("[data-quantity]").forEach((quantityBlock => {
+                updateButtonState(quantityBlock);
+            }));
+        }
+        initializeButtonsState();
     }
     function formRating() {
         const ratings = document.querySelectorAll("[data-rating]");
@@ -573,6 +592,15 @@
         document.addEventListener("click", (function(e) {
             if (!langHeader.contains(e.target)) langHeader.classList.remove("_active");
         }));
+        const langLinks = langHeader.querySelectorAll(".lang-header__link");
+        langLinks.forEach((link => {
+            link.addEventListener("click", (function(e) {
+                e.preventDefault();
+                langLinks.forEach((item => item.classList.remove("_active")));
+                this.classList.add("_active");
+                langHeader.classList.remove("_active");
+            }));
+        }));
     }
     function indents() {
         const footer = document.querySelector(".footer");
@@ -592,19 +620,81 @@
         indents();
     }));
     indents();
-    let isAdded = false;
-    document.querySelector(".top-footer__button").addEventListener("click", (function() {
-        const addPopup = document.getElementById("add");
-        const popupContent = addPopup.querySelector(".popup-button__content");
-        const popupText = popupContent.querySelector("span");
-        isAdded = !isAdded;
-        if (isAdded) popupText.textContent = "Добавлено в заказ"; else popupText.textContent = "Удалено из заказа";
-        addPopup.classList.add("popup_show");
-        addPopup.setAttribute("aria-hidden", "false");
-        setTimeout((() => {
-            addPopup.classList.remove("popup_show");
-            addPopup.setAttribute("aria-hidden", "true");
-        }), 2e3);
+    const addPopup = document.getElementById("add");
+    if (addPopup) {
+        const popupContent = addPopup?.querySelector(".popup-button__content");
+        const popupText = popupContent?.querySelector("span");
+        document.addEventListener("click", (function(e) {
+            const addBasket = e.target.closest(".add-basket");
+            const card = addBasket.closest(".footer-product-card");
+            const button = card.querySelector(".top-footer__button");
+            const quantityInput = card.querySelector("[data-quantity-value]");
+            const isActive = button?.classList.contains("_active");
+            popupText.textContent = isActive ? "Удалено из заказа" : "Добавлено в заказ";
+            if (button) {
+                button.classList.toggle("_active", !isActive);
+                if (quantityInput) quantityInput.value = 1;
+            }
+            const showBasket = card.querySelector(".show-basket");
+            if (showBasket) {
+                addBasket.style.display = isActive ? "inline" : "none";
+                showBasket.style.display = isActive ? "none" : "inline";
+            }
+            addPopup.classList.add("popup_show");
+            addPopup.setAttribute("aria-hidden", "false");
+            setTimeout((() => {
+                addPopup.classList.remove("popup_show");
+                addPopup.setAttribute("aria-hidden", "true");
+            }), 2e3);
+        }));
+    }
+    class HorizontalDragScroll {
+        constructor(selector, options = {}) {
+            this.containers = document.querySelectorAll(selector);
+            this.sensitivity = options.sensitivity || 1.5;
+            this.init();
+        }
+        init() {
+            this.containers.forEach((container => this.attachListeners(container)));
+        }
+        attachListeners(container) {
+            let isDragging = false;
+            let startX = 0;
+            let scrollStart = 0;
+            const onMouseDown = e => {
+                if (0 !== e.button) return;
+                isDragging = true;
+                container.classList.add("dragging");
+                startX = e.pageX - container.offsetLeft;
+                scrollStart = container.scrollLeft;
+                document.addEventListener("mousemove", onMouseMove, {
+                    passive: false
+                });
+                document.addEventListener("mouseup", onMouseUp);
+            };
+            const onMouseMove = e => {
+                if (!isDragging) return;
+                e.preventDefault();
+                const x = e.pageX - container.offsetLeft;
+                const delta = (x - startX) * this.sensitivity;
+                container.scrollLeft = scrollStart - delta;
+            };
+            const onMouseUp = () => {
+                isDragging = false;
+                container.classList.remove("dragging");
+                document.removeEventListener("mousemove", onMouseMove);
+                document.removeEventListener("mouseup", onMouseUp);
+            };
+            container.addEventListener("mousedown", onMouseDown);
+            container.addEventListener("mouseleave", (() => {
+                if (isDragging) onMouseUp();
+            }));
+        }
+    }
+    document.addEventListener("DOMContentLoaded", (() => {
+        new HorizontalDragScroll(".scroll", {
+            sensitivity: 1.8
+        });
     }));
     window["FLS"] = false;
     formQuantity();
