@@ -65,7 +65,9 @@
         }
         if (page) page.style.paddingBottom = `${hFooter - hfooterTop}px`;
         if (popups.length) popups.forEach((popup => {
-            popup.style.paddingBottom = `${hFooter - hfooterTop}px`;
+            popup.style.paddingBottom = `${hFooter}px`;
+            console.log(hFooter);
+            console.log(hfooterTop);
         }));
     }
     window.addEventListener("resize", indents);
