@@ -50,6 +50,32 @@
             return self.indexOf(item) === index;
         }));
     }
+    function indents() {
+        const footer = document.querySelector(".footer");
+        const page = document.querySelector(".page");
+        const popups = document.querySelectorAll(".popup");
+        const footerTop = document.querySelector(".footer__top");
+        if (!footer) return;
+        let hFooter = window.getComputedStyle(footer).height;
+        hFooter = Number(hFooter.replace("px", ""));
+        let hfooterTop = 0;
+        if (footerTop && "none" !== window.getComputedStyle(footerTop).display) {
+            let height = window.getComputedStyle(footerTop).height;
+            hfooterTop = Number(height.replace("px", ""));
+        }
+        if (page) page.style.paddingBottom = `${hFooter - hfooterTop}px`;
+        if (popups.length) popups.forEach((popup => {
+            popup.style.paddingBottom = `${hFooter - hfooterTop}px`;
+        }));
+    }
+    window.addEventListener("resize", indents);
+    window.addEventListener("scroll", indents);
+    indents();
+    const observer = new MutationObserver((() => requestAnimationFrame(indents)));
+    observer.observe(document.documentElement, {
+        attributes: true,
+        attributeFilter: [ "class" ]
+    });
     class Popup {
         constructor(options) {
             let config = {
@@ -149,7 +175,7 @@
                 const isTopFooterButton = e.target.closest(".top-footer__button");
                 if (!popupContent && this.isOpen && !isTopFooterButton) {
                     const currentPopup = document.querySelector(`.${this.options.classes.popupActive}`);
-                    if (currentPopup && (currentPopup.classList.contains("card-product-block") || currentPopup.classList.contains("order") || currentPopup.classList.contains("thanks-order"))) return;
+                    if (currentPopup && (currentPopup.classList.contains("card-product-block") || currentPopup.classList.contains("main-order") || currentPopup.classList.contains("thanks-order"))) return;
                     e.preventDefault();
                     this.close();
                 }
@@ -189,7 +215,8 @@
                 if (!this._reopen) this.previousActiveElement = document.activeElement;
                 this.targetOpen.element = document.querySelector(this.targetOpen.selector);
                 if (this.targetOpen.element) {
-                    if (this.targetOpen.element.classList.contains("card-product-block")) document.documentElement.classList.add("popup-product-card"); else if (this.targetOpen.element.classList.contains("order")) document.documentElement.classList.add("popup-order"); else if (this.targetOpen.element.classList.contains("thanks-order")) document.documentElement.classList.add("popup-thanks-order");
+                    if (this.targetOpen.element.classList.contains("card-product-block")) document.documentElement.classList.add("popup-product-card"); else if (this.targetOpen.element.classList.contains("main-order")) document.documentElement.classList.add("popup-order"); else if (this.targetOpen.element.classList.contains("thanks-order")) document.documentElement.classList.add("popup-thanks-order");
+                    requestAnimationFrame((() => indents()));
                     if (this.youTubeCode) {
                         const codeVideo = this.youTubeCode;
                         const urlVideo = `https://www.youtube.com/embed/${codeVideo}?rel=0&showinfo=0&autoplay=1`;
@@ -244,7 +271,8 @@
                 }
             }));
             if (this.youTubeCode) if (this.targetOpen.element.querySelector(`[${this.options.youtubePlaceAttribute}]`)) this.targetOpen.element.querySelector(`[${this.options.youtubePlaceAttribute}]`).innerHTML = "";
-            if (this.previousOpen.element.classList.contains("card-product-block")) document.documentElement.classList.remove("popup-product-card"); else if (this.previousOpen.element.classList.contains("order")) document.documentElement.classList.remove("popup-order"); else if (this.previousOpen.element.classList.contains("thanks-order")) document.documentElement.classList.remove("popup-thanks-order");
+            if (this.previousOpen.element.classList.contains("card-product-block")) document.documentElement.classList.remove("popup-product-card"); else if (this.previousOpen.element.classList.contains("main-order")) document.documentElement.classList.remove("popup-order"); else if (this.previousOpen.element.classList.contains("thanks-order")) document.documentElement.classList.remove("popup-thanks-order");
+            requestAnimationFrame((() => indents()));
             this.previousOpen.element.classList.remove(this.options.classes.popupActive);
             this.previousOpen.element.setAttribute("aria-hidden", "true");
             if (!this._reopen) {
@@ -363,7 +391,7 @@
                 valueElement.value = value;
                 if (value <= 0) {
                     const orderColumn = quantityBlock.closest(".order__column");
-                    if (orderColumn) orderColumn.remove();
+                    if (orderColumn) orderColumn.classList.add("fade-out");
                 } else updateButtonState(quantityBlock);
             }
         }));
@@ -579,7 +607,7 @@
     const buttons = document.querySelectorAll(".button");
     if (buttons) buttons.forEach((button => {
         button.addEventListener("click", (() => {
-            button.classList.toggle("_active");
+            button.classList.add("_active");
         }));
     }));
     const langHeader = document.querySelector(".lang-header");
@@ -602,52 +630,31 @@
             }));
         }));
     }
-    function indents() {
-        const footer = document.querySelector(".footer");
-        const page = document.querySelector(".page");
-        const popups = document.querySelectorAll(".popup");
-        let hFooter = window.getComputedStyle(footer, false).height;
-        hFooter = Number(hFooter.slice(0, hFooter.length - 2));
-        if (page) page.style.paddingBottom = hFooter + "px";
-        if (popups) popups.forEach((popup => {
-            popup.style.paddingBottom = hFooter + "px";
-        }));
-    }
-    window.addEventListener("scroll", (() => {
-        indents();
+    document.addEventListener("click", (function(e) {
+        const addBasket = e.target.closest(".add-basket");
+        if (!addBasket) return;
+        const card = addBasket.closest(".footer-product-card");
+        if (!card) return;
+        const button = card.querySelector(".top-footer__button");
+        const quantityInput = card.querySelector("[data-quantity-value]");
+        const isActive = button?.classList.contains("_active");
+        popupText.textContent = isActive ? "Удалено из заказа" : "Добавлено в заказ";
+        if (button) {
+            button.classList.toggle("_active", !isActive);
+            if (quantityInput) quantityInput.value = 1;
+        }
+        const showBasket = card.querySelector(".show-basket");
+        if (showBasket) {
+            addBasket.style.display = isActive ? "inline" : "none";
+            showBasket.style.display = isActive ? "none" : "inline";
+        }
+        addPopup.classList.add("popup_show");
+        addPopup.setAttribute("aria-hidden", "false");
+        setTimeout((() => {
+            addPopup.classList.remove("popup_show");
+            addPopup.setAttribute("aria-hidden", "true");
+        }), 2e3);
     }));
-    window.addEventListener("resize", (() => {
-        indents();
-    }));
-    indents();
-    const addPopup = document.getElementById("add");
-    if (addPopup) {
-        const popupContent = addPopup?.querySelector(".popup-button__content");
-        const popupText = popupContent?.querySelector("span");
-        document.addEventListener("click", (function(e) {
-            const addBasket = e.target.closest(".add-basket");
-            const card = addBasket.closest(".footer-product-card");
-            const button = card.querySelector(".top-footer__button");
-            const quantityInput = card.querySelector("[data-quantity-value]");
-            const isActive = button?.classList.contains("_active");
-            popupText.textContent = isActive ? "Удалено из заказа" : "Добавлено в заказ";
-            if (button) {
-                button.classList.toggle("_active", !isActive);
-                if (quantityInput) quantityInput.value = 1;
-            }
-            const showBasket = card.querySelector(".show-basket");
-            if (showBasket) {
-                addBasket.style.display = isActive ? "inline" : "none";
-                showBasket.style.display = isActive ? "none" : "inline";
-            }
-            addPopup.classList.add("popup_show");
-            addPopup.setAttribute("aria-hidden", "false");
-            setTimeout((() => {
-                addPopup.classList.remove("popup_show");
-                addPopup.setAttribute("aria-hidden", "true");
-            }), 2e3);
-        }));
-    }
     class HorizontalDragScroll {
         constructor(selector, options = {}) {
             this.containers = document.querySelectorAll(selector);
